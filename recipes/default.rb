@@ -20,10 +20,10 @@
 
 include_recipe "webpi"
 
-webpi_product "IIS7" do
-  accept_eula node['iis']['accept_eula']
-  action :install
-end
+# webpi_product "IIS7" do
+#   accept_eula node['iis']['accept_eula']
+#   action :install
+# end
 
 service "iis" do
   service_name "W3SVC"
